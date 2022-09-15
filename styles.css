@@ -145,6 +145,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  text-align: center;
 }
 
 .card {
@@ -188,5 +192,17 @@ button {
   }
   .card {
     flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
+  #histories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+
+  }
+
+  }
+
