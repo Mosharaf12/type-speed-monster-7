@@ -11,91 +11,94 @@
   </head>
   <body>
 
+   <div class="container my-5">
     <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h1>Assignment Question</h1>
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              What is the difference between localStorage and sessionStorage?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                1. <strong>LocalStorage</strong>
+      <div class="accordion-item">
+          <h1>Assignment important Question</h1>
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What is the difference between localStorage and sessionStorage?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              1. <strong>LocalStorage</strong>
 
-                Pros:
-                
-               1. Web storage can be viewed simplistically as an improvement on cookies, providing much greater storage capacity. If you look at the Mozilla source code we can see that 5120KB (5MB which equals 2.5 Million chars on Chrome) is the default storage size for an entire domain. <br>
-               2. The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) - reducing the amount of traffic between client and server. <br>
-               3. The data stored in localStorage persists until explicitly deleted. Changes made are saved and available for all current and future visits to the site. <br>
-
-                Cons:
-                
-              1.  It works on same-origin policy. So, data stored will only be available on the same origin.
-              <br>
-              <br>
-            2.  <strong>sessionStorage</strong>
-
-                Pros:
-
-                1.It is similar to localStorage. <br>
-               2. The data is not persistent i.e. data is only available per window (or tab in browsers like Chrome and Firefox). Data is only available during the page session. Changes made are saved and available for the current page, as well as future visits to the site on the same tab/window. Once the tab/window is closed, the data is deleted. <br>
-                Cons:
-
-               1. The data is available only inside the window/tab in which it was set. <br>
-               2. Like localStorage, it works on same-origin policy. So, data stored will only be available on the same origin.
-                
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              What is Global scope and block scope?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>Global Scope</strong>
-
-                Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var , let and const are quite similar when declared outside a block. They all have Global Scope: var x = 2; // Global scope. let x = 2; // Global scope.
-                <br>
-
-               <strong> Block Scope:</strong>
-                <br>
-                This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped.
-                
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              How to work JavaScript in Event loop ?
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                The <code>Event Loop </code> has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              How many types of undefined 
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <code>JavaScript undefined</code>
-                A variable that has not been assigned a value is of type undefined . A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned 
+              Pros:
               
-            </div>
+             1. Web storage can be viewed simplistically as an improvement on cookies, providing much greater storage capacity. If you look at the Mozilla source code we can see that 5120KB (5MB which equals 2.5 Million chars on Chrome) is the default storage size for an entire domain. <br>
+             2. The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) - reducing the amount of traffic between client and server. <br>
+             3. The data stored in localStorage persists until explicitly deleted. Changes made are saved and available for all current and future visits to the site. <br>
+
+              Cons:
+              
+            1.  It works on same-origin policy. So, data stored will only be available on the same origin.
+            <br>
+            <br>
+          2.  <strong>sessionStorage</strong>
+
+              Pros:
+
+              1.It is similar to localStorage. <br>
+             2. The data is not persistent i.e. data is only available per window (or tab in browsers like Chrome and Firefox). Data is only available during the page session. Changes made are saved and available for the current page, as well as future visits to the site on the same tab/window. Once the tab/window is closed, the data is deleted. <br>
+              Cons:
+
+             1. The data is available only inside the window/tab in which it was set. <br>
+             2. Like localStorage, it works on same-origin policy. So, data stored will only be available on the same origin.
+              
           </div>
         </div>
       </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What is Global scope and block scope?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <strong>Global Scope</strong>
 
+              Global variables can be accessed from anywhere in a JavaScript program. Variables declared with var , let and const are quite similar when declared outside a block. They all have Global Scope: var x = 2; // Global scope. let x = 2; // Global scope.
+              <br>
+
+             <strong> Block Scope:</strong>
+              <br>
+              This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped.
+              
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How to work JavaScript in Event loop ?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              The <code>Event Loop </code> has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            How many types of undefined 
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              <code>JavaScript undefined</code>
+              A variable that has not been assigned a value is of type undefined . A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   </div>
 
 
 
